@@ -1331,9 +1331,7 @@
 
 /* Small devices (min-width: 576px) (max-width: 767.98px) // (landscape phones, less than 992px) */
 @media only screen and (max-width: 992px) {
-	.header.stylehome1.dashbord_pages:before {
-		background-image: -ms-linear-gradient(0deg, rgb(52, 82, 255) 0%, rgb(255, 16, 83) 100%);
-	}
+	
 	.stylehome1.dashbord_mobile_logo.dashbord_pages .nav_logo_img {
 		margin-left: 0 !important;
 	}

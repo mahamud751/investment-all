@@ -6,7 +6,8 @@ import "aos/dist/aos.css";
 import "../../public/scss/main.scss";
 import { DM_Sans, Poppins } from "next/font/google";
 import { useEffect } from "react";
-
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 if (typeof window !== "undefined") {
   import("bootstrap");
 }

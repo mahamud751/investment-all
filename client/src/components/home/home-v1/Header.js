@@ -28,7 +28,7 @@ const Header = () => {
   return (
     <>
       <header
-        className={`header-nav nav-homepage-style main-menu  ${
+        className={`header-nav nav-homepage-style main-menu   ${
           navbar ? "sticky slideInDown animated" : ""
         }`}
       >
@@ -67,7 +67,7 @@ const Header = () => {
                 <div className="d-flex align-items-center">
                   <a
                     href="#"
-                    className="login-info d-flex align-items-center"
+                    className="login-info d-flex align-items-center ud-btn add-property menu-btn bdrs60"
                     data-bs-toggle="modal"
                     data-bs-target="#loginSignupModal"
                     role="button"
@@ -75,36 +75,22 @@ const Header = () => {
                     <i className="far fa-user-circle fz16 me-2" />{" "}
                     <span className="d-none d-xl-block">Login / Register</span>
                   </a>
-                  <Link
+                  {/* <Link
                     className="ud-btn add-property menu-btn bdrs60 mx-2 mx-xl-4"
                     href="/dashboard-add-property"
                   >
                     Add Property
                     <i className="fal fa-arrow-right-long" />
-                  </Link>
-                  <a
+                  </Link> */}
+                  {/* <a
                     className="sidemenu-btn filter-btn-right"
                     href="#"
                     data-bs-toggle="offcanvas"
                     data-bs-target="#SidebarPanel"
                     aria-controls="SidebarPanelLabel"
                   >
-                    <Image
-                      width={25}
-                      height={9}
-                      className="img-1"
-                      src="/images/icon/nav-icon-white.svg"
-                      alt="humberger menu"
-                    />
-
-                    <Image
-                      width={25}
-                      height={9}
-                      className="img-2"
-                      src="/images/icon/nav-icon-dark.svg"
-                      alt="humberger menu"
-                    />
-                  </a>
+                
+                  </a> */}
                 </div>
               </div>
               {/* End .col-auto */}
