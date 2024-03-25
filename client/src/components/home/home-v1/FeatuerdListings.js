@@ -5,12 +5,13 @@ import Link from "next/link";
 import { Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.min.css";
+import { HiOutlineBuildingOffice2 } from "react-icons/hi2";
 
 const FeaturedListings = () => {
   return (
     <>
       <Swiper
-        spaceBetween={30}
+        spaceBetween={20}
         modules={[Navigation, Pagination]}
         navigation={{
           nextEl: ".featured-next__active",
@@ -48,25 +49,19 @@ const FeaturedListings = () => {
                     src={listing.image}
                     alt="listings"
                   />
-                  <div className="sale-sticker-wrap">
-                    {!listing.forRent && (
-                      <div className="list-tag fz12">
-                        <span className="flaticon-electricity me-2" />
-                        FEATURED
-                      </div>
-                    )}
-                  </div>
-
-                  <div className="list-price">
-                    {listing.price} / <span>mo</span>
-                  </div>
                 </div>
                 <div className="list-content">
                   <h6 className="list-title">
-                    <Link href={`/single-v1/${listing.id}`}>{listing.title}</Link>
+                    <Link href={`/single-v1/${listing.id}`}>
+                      {listing.title}
+                    </Link>
                   </h6>
                   <p className="list-text">{listing.location}</p>
                   <div className="list-meta d-flex align-items-center">
+                    <a href="#">
+                      <HiOutlineBuildingOffice2 />
+                      10 Floor
+                    </a>
                     <a href="#">
                       <span className="flaticon-bed" /> {listing.bed} bed
                     </a>

@@ -126,9 +126,9 @@ const Home_V1 = () => {
               data-aos-delay="300"
             >
               <div className="main-title text-center">
-                <h2 className="title">See How Realton Can Help</h2>
+                <h2 className="title">See How it Works </h2>
                 <p className="paragraph">
-                  Aliquam lacinia diam quis lacus euismod
+                  Property ownership has never been easier
                 </p>
               </div>
             </div>
@@ -148,9 +148,9 @@ const Home_V1 = () => {
           <div className="row align-items-center" data-aos="fade-up">
             <div className="col-lg-9">
               <div className="main-title2">
-                <h2 className="title">Discover Our Featured Listings</h2>
+                <h2 className="title">Featured Properties</h2>
                 <p className="paragraph">
-                  Aliquam lacinia diam quis lacus euismod
+                  We only select properties with the highest income potential
                 </p>
               </div>
             </div>

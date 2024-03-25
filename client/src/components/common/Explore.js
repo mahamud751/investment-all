@@ -7,23 +7,30 @@ const Explore = () => {
     {
       id: 1,
       icon: "/images/icon/property-buy.svg",
-      title: "Buy a property",
-      text: "Nullam sollicitudin blandit eros eu pretium. Nullam maximus ultricies auctor.",
+      title: "Browse",
+      text: "Review our portfolio of high-yielding rental properties",
       linkText: "Find a home",
     },
     {
       id: 2,
       icon: "/images/icon/property-sell.svg",
-      title: "Sell a property",
-      text: "Nullam sollicitudin blandit eros eu pretium. Nullam maximus ultricies auctor.",
-      linkText: "Place an ad",
+      title: "BUY",
+      text: "Receive monthly rental income and withdraw anytime",
+      linkText: "Find a home",
     },
     {
       id: 3,
       icon: "/images/icon/property-rent.svg",
-      title: "Rent a property",
-      text: "Nullam sollicitudin blandit eros eu pretium. Nullam maximus ultricies auctor.",
-      linkText: "Find a rental",
+      title: "EARN",
+      text: "Receive monthly rental income and withdraw anytime",
+      linkText: "Find a home",
+    },
+    {
+      id: 4,
+      icon: "/images/icon/property-rent.svg",
+      title: "EARN",
+      text: "Receive monthly rental income and withdraw anytime",
+      linkText: "Find a home",
     },
   ];
 
@@ -31,7 +38,7 @@ const Explore = () => {
     <>
       {iconboxData.map((item) => (
         <div
-          className="col-sm-6 col-lg-4"
+          className="col-sm-6 col-lg-3"
           key={item.id}
           data-aos="fade-up"
           data-aos-delay={(item.id + 1) * 100} // Increase delay for each item
