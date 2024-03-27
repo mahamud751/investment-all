@@ -1,15 +1,5 @@
 @charset "UTF-8";
-/*
-Project/Template Name:  Homez - Real Estate Nextjs Template
-Template Url:  
-Author: ib-themes
-Author Url: https://themeforest.net/user/ib-themes/portfolio
-Version: 1.0.0
-Description: Zeomart - Multi-Vendor & Marketplace HTML Template
-Tag: advanced search, agency, agent, classified, directory, house, listing, property, real estate, real estate agency, real estate agent, realestate, realtor, rental
 
-
-********/
 /* CSS Document */
 
 @import url(../css/fontawesome.css);
@@ -10604,4 +10594,21 @@ input:focus-visible {
   .bb1-sm {
     border-bottom: 1px solid #dddddd;
   }
+}
+
+// new css
+.rangeslider-horizontal {
+  height: 6px !important;
+  border-radius: 0 !important;
+}
+.rangeslider__fill {
+  background-color: #eb6753 !important;
+}
+.rangeslider,
+.rangeslider .rangeslider__fill {
+  box-shadow: none !important;
+}
+
+.rangeslider__handle {
+  display: none !important;
 }

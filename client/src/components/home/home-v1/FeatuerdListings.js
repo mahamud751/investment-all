@@ -6,8 +6,23 @@ import { Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.min.css";
 import { HiOutlineBuildingOffice2 } from "react-icons/hi2";
+import Slider from "react-rangeslider";
+import { useState } from "react";
 
 const FeaturedListings = () => {
+  const [value, setValue] = useState(50);
+
+  const handleChangeStart = () => {
+    console.log("Change event started");
+  };
+
+  const handleChange = (value) => {
+    setValue(value);
+  };
+
+  const handleChangeComplete = () => {
+    console.log("Change event completed");
+  };
   return (
     <>
       <Swiper
@@ -51,7 +66,7 @@ const FeaturedListings = () => {
                   />
                 </div>
                 <div className="list-content">
-                  <h6 className="list-title">
+                  <h6 className="list-title fw-bold">
                     <Link href={`/single-v1/${listing.id}`}>
                       {listing.title}
                     </Link>
@@ -59,7 +74,9 @@ const FeaturedListings = () => {
                   <p className="list-text">{listing.location}</p>
                   <div className="list-meta d-flex align-items-center">
                     <a href="#">
-                      <HiOutlineBuildingOffice2 />
+                      <span className="mr-2">
+                        <HiOutlineBuildingOffice2 />
+                      </span>
                       10 Floor
                     </a>
                     <a href="#">
@@ -72,20 +89,79 @@ const FeaturedListings = () => {
                       <span className="flaticon-expand" /> {listing.sqft} sqft
                     </a>
                   </div>
-                  <hr className="mt-2 mb-2" />
-                  <div className="list-meta2 d-flex justify-content-between align-items-center">
-                    <span className="for-what">For Rent</span>
-                    <div className="icons d-flex align-items-center">
-                      <a href="#">
-                        <span className="flaticon-fullscreen" />
-                      </a>
-                      <a href="#">
-                        <span className="flaticon-new-tab" />
-                      </a>
-                      <a href="#">
-                        <span className="flaticon-like" />
-                      </a>
+                  <div className="d-flex justify-content-between mt-2 ">
+                    <div className="d-flex justify-items-center gap-2">
+                      <p className="fw-bold" style={{ fontSize: "15px" }}>
+                        13% IRR
+                      </p>
+                      <div>
+                        <Image
+                          width={15}
+                          height={15}
+                          // className="w-100 h-100 cover"
+                          src="/images/listings/informationIcon.png"
+                          alt="listings"
+                        />
+                      </div>
                     </div>
+                    <div className="d-flex justify-items-center gap-2">
+                      <p className="fw-bold" style={{ fontSize: "15px" }}>
+                        11% ERY
+                      </p>
+                      <div>
+                        <Image
+                          width={15}
+                          height={15}
+                          // className="w-100 h-100 cover"
+                          src="/images/listings/informationIcon.png"
+                          alt="listings"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    className="slider"
+                    style={{
+                      marginTop: "-20px",
+                    }}
+                  >
+                    <Slider
+                      min={0}
+                      max={100}
+                      value={value}
+                      onChangeStart={handleChangeStart}
+                      onChange={handleChange}
+                      onChangeComplete={handleChangeComplete}
+                    />
+                  </div>
+                  <div className="d-flex justify-content-between  ">
+                    <p className="fw-bold" style={{ fontSize: "15px" }}>
+                      95%
+                    </p>
+
+                    <p className="fw-bold" style={{ fontSize: "15px" }}>
+                      4 Points left
+                    </p>
+                  </div>
+
+                  <div
+                    className="d-flex justify-content-center"
+                    style={{
+                      backgroundColor: "#EB6753",
+                      padding: "8px 0",
+                      borderRadius: "10px",
+                    }}
+                  >
+                    <button
+                      style={{
+                        border: 0,
+                        background: "none",
+                        fontSize: "20px",
+                        color: "white",
+                      }}
+                    >
+                      Buy Now
+                    </button>
                   </div>
                 </div>
               </div>
