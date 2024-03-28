@@ -15,6 +15,7 @@ import Image from "next/image";
 import Blog from "@/components/common/Blog";
 import Link from "next/link";
 import PopulerProperty from "@/components/home/home-v1/PopulerProperty";
+import ReturnCalculator from "@/components/home/home-v1/ReturnCalculator";
 
 export const metadata = {
   title: "Home v1 || Homez - Real Estate NextJS Template",
@@ -178,42 +179,9 @@ const Home_V1 = () => {
 
       {/* Explore property-city */}
       <section className="pb40-md pb90">
-        <div className="container">
-          <div
-            className="row align-items-center"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
-            <div className="col-lg-9">
-              <div className="main-title2">
-                <h2 className="title">Properties by Cities</h2>
-                <p className="paragraph">
-                  Aliquam lacinia diam quis lacus euismod
-                </p>
-              </div>
-            </div>
-            {/* End col-lg-9 */}
-
-            <div className="col-lg-3">
-              <div className="text-start text-lg-end mb-3">
-                <a className="ud-btn2" href="#">
-                  See All Cities
-                  <i className="fal fa-arrow-right-long" />
-                </a>
-              </div>
-            </div>
-            {/* End col-lg-3 */}
-          </div>
-          {/* End .row */}
-
-          <div className="row">
-            <div className="col-lg-12" data-aos="fade-up" data-aos-delay="300">
-              <div className="property-city-slider position-relative">
-                <PropertiesByCities />
-              </div>
-            </div>
-          </div>
-          {/* End .row */}
+        <div className="container investor_calculator">
+          <h2 className="text-center">Return Calculator</h2>
+          <ReturnCalculator />
         </div>
       </section>
       {/* End Explore property-city */}

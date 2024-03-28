@@ -12,17 +12,10 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/(listing)/(grid-view)/grid-default/page": [
+    "/[...not_found]/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/(listing)/(grid-view)/grid-default/page.css",
-      "static/chunks/app/(listing)/(grid-view)/grid-default/page.js"
-    ],
-    "/(listing)/(grid-view)/grid-full-3-col/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/(listing)/(grid-view)/grid-full-3-col/page.css",
-      "static/chunks/app/(listing)/(grid-view)/grid-full-3-col/page.js"
+      "static/chunks/app/[...not_found]/page.js"
     ]
   }
 }

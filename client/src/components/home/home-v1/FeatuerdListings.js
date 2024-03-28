@@ -53,7 +53,7 @@ const FeaturedListings = () => {
         }}
       >
         {listings.slice(0, 4).map((listing) => (
-          <SwiperSlide key={listing.id}>
+          <SwiperSlide key={listing.id} className="item-range">
             <div className="item">
               <div className="listing-style1">
                 <div className="list-thumb">

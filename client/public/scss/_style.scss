@@ -10597,18 +10597,74 @@ input:focus-visible {
 }
 
 // new css
-.rangeslider-horizontal {
+.item-range .rangeslider-horizontal {
   height: 6px !important;
   border-radius: 0 !important;
 }
-.rangeslider__fill {
+.item-range .rangeslider__fill {
   background-color: #eb6753 !important;
 }
-.rangeslider,
+.item-range .rangeslider,
 .rangeslider .rangeslider__fill {
   box-shadow: none !important;
 }
 
-.rangeslider__handle {
+.item-range .rangeslider__handle {
   display: none !important;
+}
+
+// For Return Calcutor
+.investor_calculator .rangeslider-horizontal {
+  height: 8px !important;
+  border-radius: 0 !important;
+}
+.investor_calculator .rangeslider__fill {
+  background-color: #eb6753 !important;
+}
+.investor_calculator .rangeslider,
+.rangeslider .rangeslider__fill {
+  box-shadow: none !important;
+}
+
+// .item-range .rangeslider__handle {
+//   display: none !important;
+// }
+.rangeslider-horizontal .rangeslider__handle {
+  width: 20px !important;
+  height: 20px !important;
+  border-radius: 30px;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  background: #eb6753 !important;
+  box-shadow: none !important;
+}
+
+.rangeslider-horizontal .rangeslider__handle:after {
+  display: none !important;
+}
+
+// Investor Calculator
+
+.investor_calculator .right_part,
+.left_part {
+  background-color: #f7f7f7;
+}
+.investor_calculator input[type="radio"] {
+  width: 18px;
+  height: 18px;
+}
+.investor_calculator input:focus {
+  border: 1 px solid #ced4da;
+  outline: 0;
+}
+.investor_calculator input {
+  border: 1px solid #ced4da;
+  padding-left: 5px;
+}
+.invest_selector p {
+  font-size: 1rem;
+  margin-top: -6px;
+}
+.investor_calculator p {
+  font-size: 1rem;
 }
